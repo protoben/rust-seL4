@@ -10,6 +10,8 @@ use core::cell::RefCell;
 use virtio_drivers::device::net::{self, RxBuffer};
 use virtio_drivers::transport::mmio::MmioTransport;
 
+use sel4_hal_adapters::smoltcp::phy::{IrqAck, HasMac};
+
 use microkit_http_server_example_virtio_hal_impl::HalImpl;
 
 use smoltcp::phy;
@@ -17,14 +19,6 @@ use smoltcp::time::Instant;
 
 pub const NET_QUEUE_SIZE: usize = 16;
 pub const NET_BUFFER_LEN: usize = 2048;
-
-pub trait IrqAck {
-    fn irq_ack(&mut self);
-}
-
-pub trait HasMac {
-    fn mac_address(&self) -> [u8; 6];
-}
 
 pub type VirtIONet = net::VirtIONet<HalImpl, MmioTransport, {NET_QUEUE_SIZE}>;
 

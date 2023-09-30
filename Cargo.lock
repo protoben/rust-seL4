@@ -1755,6 +1755,25 @@ dependencies = [
 ]
 
 [[package]]
+name = "microkit-http-server-example-smoltcp-phy-impl"
+version = "0.1.0"
+dependencies = [
+ "log",
+ "microkit-http-server-example-virtio-hal-impl",
+ "sel4",
+ "sel4-bounce-buffer-allocator",
+ "sel4-externally-shared",
+ "sel4-immediate-sync-once-cell",
+ "sel4-logging",
+ "sel4-microkit",
+ "sel4-microkit-message",
+ "sel4-shared-ring-buffer",
+ "sel4-sync",
+ "smoltcp",
+ "virtio-drivers",
+]
+
+[[package]]
 name = "microkit-http-server-example-sp804-driver"
 version = "0.1.0"
 dependencies = [
@@ -1814,8 +1833,8 @@ name = "microkit-http-server-example-virtio-net-driver"
 version = "0.1.0"
 dependencies = [
  "log",
+ "microkit-http-server-example-smoltcp-phy-impl",
  "microkit-http-server-example-virtio-hal-impl",
- "microkit-http-server-example-virtio-net-driver-interface-types",
  "sel4",
  "sel4-bounce-buffer-allocator",
  "sel4-externally-shared",
@@ -1825,6 +1844,8 @@ dependencies = [
  "sel4-microkit-message",
  "sel4-shared-ring-buffer",
  "sel4-sync",
+ "serde",
+ "smoltcp",
  "virtio-drivers",
 ]
 
