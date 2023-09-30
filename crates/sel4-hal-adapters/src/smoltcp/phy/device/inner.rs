@@ -1,3 +1,5 @@
+//! Mutable inner part of phy::Device impl
+
 use alloc::vec::Vec;
 use core::alloc::Layout;
 use core::iter;

@@ -1,6 +1,4 @@
-#![no_std]
-#![feature(never_type)]
-#![feature(strict_provenance)]
+//! Client-side phy::Device impl
 
 extern crate alloc;
 
@@ -14,7 +12,6 @@ use sel4_externally_shared::ExternallySharedRef;
 use sel4_shared_ring_buffer::RingBuffers;
 
 mod inner;
-
 use inner::{Inner, RxBufferIndex, TxBufferIndex};
 
 pub struct DeviceImpl {

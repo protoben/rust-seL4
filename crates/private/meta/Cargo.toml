@@ -21,6 +21,7 @@ sel4-async-single-threaded-executor = { path = "../../sel4-async/single-threaded
 sel4-async-timers = { path = "../../sel4-async/timers" }
 sel4-bounce-buffer-allocator = { path = "../../sel4-bounce-buffer-allocator" }
 sel4-config = { path = "../../sel4/config" }
+sel4-hal-adapters = { path = "../../sel4-hal-adapters" }
 sel4-immediate-sync-once-cell = { path = "../../sel4-immediate-sync-once-cell" }
 sel4-immutable-cell = { path = "../../sel4-immutable-cell" }
 sel4-logging = { path = "../../sel4-logging" }
@@ -31,7 +32,6 @@ sel4-root-task = { path = "../../sel4-root-task", features = ["full"], optional 
 sel4-shared-ring-buffer = { path = "../../sel4-shared-ring-buffer" }
 sel4-shared-ring-buffer-block-io = { path = "../../sel4-shared-ring-buffer/block-io" }
 sel4-shared-ring-buffer-block-io-types = { path = "../../sel4-shared-ring-buffer/block-io/types" }
-sel4-shared-ring-buffer-smoltcp = { path = "../../sel4-shared-ring-buffer/smoltcp" }
 sel4-sync = { path = "../../sel4-sync" }
 sel4-sys = { path = "../../sel4/sys" }
 
